@@ -1,0 +1,116 @@
+----------------------------------------------------------------
+struct contiguous
+    first: NULL
+134 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: *
+struct cnode
+    nsize: 12
+    prev: NULL
+    next: NULL
+12 byte chunk: Hello World\x00
+90 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: *
+struct cnode
+    nsize: 12
+    prev: NULL
+    next: *
+12 byte chunk: Hello World\x00
+struct cnode
+    nsize: 20
+    prev: *
+    next: NULL
+20 byte chunk: !$$$$$$$$$$$$$$$$$$$
+38 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: *
+44 byte gap
+struct cnode
+    nsize: 20
+    prev: NULL
+    next: NULL
+20 byte chunk: !$$$$$$$$$$$$$$$$$$$
+38 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: *
+struct cnode
+    nsize: 4
+    prev: NULL
+    next: *
+4 byte chunk: \xC0\xFF\xEE\x00
+8 byte gap
+struct cnode
+    nsize: 20
+    prev: *
+    next: NULL
+20 byte chunk: !$$$$$$$$$$$$$$$$$$$
+38 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: *
+struct cnode
+    nsize: 4
+    prev: NULL
+    next: *
+4 byte chunk: \xC0\xFF\xEE\x00
+8 byte gap
+struct cnode
+    nsize: 20
+    prev: *
+    next: *
+20 byte chunk: !$$$$$$$$$$$$$$$$$$$
+struct cnode
+    nsize: 0
+    prev: *
+    next: NULL
+0 byte chunk: 
+6 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: *
+struct cnode
+    nsize: 4
+    prev: NULL
+    next: *
+4 byte chunk: \xC0\xFF\xEE\x00
+8 byte gap
+struct cnode
+    nsize: 20
+    prev: *
+    next: *
+20 byte chunk: !$$$$$$$$$$$$$$$$$$$
+struct cnode
+    nsize: 0
+    prev: *
+    next: NULL
+0 byte chunk: 
+6 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: *
+96 byte gap
+struct cnode
+    nsize: 0
+    prev: NULL
+    next: NULL
+0 byte chunk: 
+6 byte gap
+----------------------------------------------------------------
+----------------------------------------------------------------
+struct contiguous
+    first: NULL
+134 byte gap
+----------------------------------------------------------------
+Now we call destroy_contiguous. It calls free.
