@@ -13,11 +13,14 @@
 // login ID: j692wu
 //////////////////////////////////////////////////////////////////////////////////////////
 
+// See contiguous.h for more documentation
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <assert.h>
 #include "contiguous.h"
+
 
 struct contiguous {
   struct cnode *first;
